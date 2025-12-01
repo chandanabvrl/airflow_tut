@@ -23,7 +23,7 @@ default_args = {
 with DAG(
     dag_id='welcome_dag',
     default_args=default_args,
-    schedule='0 23 * * *',  # every day at 11 PM
+    schedule=None,  # run only once
     catchup=False
 ) as dag:
 
